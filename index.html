@@ -7,18 +7,13 @@
 </head>
 
 <body>
-  <!-- Retrieved data will be dumped here -->
-  <div class="city"></div>
-  <div class="wind"></div>
-  <div class="humidity"></div>
-  <div class="temp"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   <script type="text/javascript">
     // This is our API key. Add your own API key between the ""
     var APIKey = "51bf07f7552914c23894d501b60792a9";
 
     // Here we are building the URL we need to query the database
-    var queryURL = "https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=Spider&apikey=" + APIKey;
+    var queryURL = "https://gateway.marvel.com:443/v1/public/characters?name=ironman&apikey=" + APIKey;
 
     // We then created an AJAX call
     $.ajax({
@@ -29,18 +24,8 @@
       // Create CODE HERE to Log the queryURL
       console.log(queryURL)
       // Create CODE HERE to log the resulting object
-      console.log(response)
-      // Create CODE HERE to transfer content to HTML
 
-      // Create CODE HERE to calculate the temperature (converted from Kelvin)
-      console.log((response.main.temp - 273.15) * 1.80 +32)
-      // Hint: To convert from Kelvin to Fahrenheit: F = (K - 273.15) * 1.80 + 32
 
-      // Create CODE HERE to dump the temperature content into HTML
-      var fTemp = (response.main.temp - 273.15) * 1.80 +32
-      $(".temp").html(fTemp)
-
-// document.getElementById("temp").innerHTML((response.main.temp - 273.15) * 1.80 +32)
     });
   </script>
 </body>
