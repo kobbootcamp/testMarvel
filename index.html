@@ -13,7 +13,7 @@
     var APIKey = "51bf07f7552914c23894d501b60792a9";
 
     // Here we are building the URL we need to query the database
-    var queryURL = "https://gateway.marvel.com:443/v1/public/characters?name=Spider-Man&apikey=" + APIKey;
+    var queryURL = "https://gateway.marvel.com:443/v1/public/characters?name=Captain%20Marvel&apikey=" + APIKey;
 
     // We then created an AJAX call
     $.ajax({
@@ -21,13 +21,39 @@
       method: "GET"
     }).then(function(response) {
 
-
-      // Create CODE HERE to log the resulting object
-      // console.log(response)
-      // console.log(response.data.results)
       console.log(response.data.results[0].description)
     });
   </script>
 </body>
 
+<!--OFFICIAL NAMES
+// Ant-Man
+//BlackPanther
+//BlackWidow
+//Bucky
+//Captain America
+//Captian Marvel
+//Deadpool
+//Hawkeye
+//HankPym
+//Hela
+//Hulk
+//Iron Man
+//Iron Monger
+//Jessica Jones
+//Loki
+//Nakia
+//Nick Fury
+//Professor X
+//Quick Silver
+//Rhones
+//Scarlet Witch
+//Spider-Man
+//Starlord
+//The Wasp
+//Thor
+//Valkerie
+//Wolverine-->
 </html>
+
+
