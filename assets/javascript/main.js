@@ -15,8 +15,8 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-console.log(getDescription("Spider-Man"));
-console.log(logActivity("Ant-Man"));
+console.log(getDescription("Hulk"));
+console.log(logActivity("Hulk"));
 
 
 function juploadstop(result) {
@@ -117,7 +117,7 @@ function getDescription(heroName) {
     marvelResponse = response.data.results[0].description;
     console.log("second: " + marvelResponse);
 
-    console.log("third: " + Response);
+    console.log(response);
 
     console.log("fourth: " + response.data.results[0].name);
     marvelCharacter = response.data.results[0].name;
@@ -172,30 +172,30 @@ function logActivity(hero) {
 
 
 //OFFICIAL NAMES
-// Ant-Man
-// Black Panther
-// Black Widow
-// Bucky
+// Ant-Man - no name
+// Black Panther - no description
+// Black Widow - no description
+// Bucky -  no description
 // Captain America
-// Captain Marvel
-// Deadpool
-// Hawkeye
-// Hank Pym
-// Hela
-// Hulk
-// Iron Man
-// Iron Monger
-// Jessica Jones
-// Loki
-// Nakia
-// Nick Fury
-// Professor X
-// Quick Silver
-// Rhones
-// Scarlet Witch
-// Spider-Man
-// Starlord
-// The Wasp
-// Thor
-// Valkerie
-// Wolverine
+// Captain Marvel - no name
+// Deadpool - no description
+// Hawkeye -  no description
+// Hank Pym -  no description
+// Hela - no name
+//                                        Hulk
+//                                        Iron Man
+// Iron Monger - no description
+// Jessica Jones -  no description
+// Loki -  no discription
+// Nakia -  no discription
+// Nick Fury -  no discription
+// Professor X-  no discription
+// Quicksilver -  no discription
+// Rhones - no name
+// Scarlet Witch - no description
+//                                         Spider-Man
+// Starlord  -  no discription
+//                                        Wasp
+//                                        Thor 
+// Valkyrie - no name
+//                                        Wolverine
