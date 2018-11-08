@@ -15,7 +15,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 
-console.log(getDescription("Ant-Man"));
+console.log(getDescription("Spider-Man"));
 console.log(logActivity("Ant-Man"));
 
 
