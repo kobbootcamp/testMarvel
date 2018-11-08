@@ -117,12 +117,13 @@ function getDescription(heroName) {
     marvelResponse = response.data.results[0].description;
     console.log("second: " + marvelResponse);
 
-    console.log("third: " + marvelResponse);
+    console.log("third: " + Response);
 
     console.log("fourth: " + response.data.results[0].name);
     marvelCharacter = response.data.results[0].name;
   
     console.log("Fifth: " +marvelCharacter);
+  
     //display the description in the char-bio div
     $("#char-bio").text(marvelResponse);
     //display name in character div
