@@ -158,13 +158,23 @@ function logActivity(hero) {
   // 3. Create Firebase event for adding employee to the database and a row in the html when a user adds an entry
   database.ref().on("child_added", function (childSnapshot) {
 
+    
     // Create the new row
-    var newRow = $("<ul class='list-group'>").append(
-      $("<li class='list-group-item'>").text("On " + matchDate + " you were matched with " + heroName),
+    // var newRow = $("<ul class='list-group'>").append(
+      // $("<li class='list-group-item'>").text("On " + matchDate + " you were matched with " + heroName),
     );
 
+    var newRow = $("<tr>").append(
+      $("<td>").text("On " + matchDate + " you were matched with " + heroName),
+    );
+  
+    // Append the new row to the train table
+    $("#resultsList > tbody").append(newRow);
+
+
+
     // Append the new row to the table
-    $("#resultsList").append(newRow)
+    // $("#resultsList").append(newRow)
 
   });
 
