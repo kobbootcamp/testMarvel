@@ -127,7 +127,7 @@ function getDescription(heroName) {
     //display the description in the char-bio div
     $("#char-bio").text(marvelResponse);
     //display name in character div
-    $("#character").text(marvelCharacter);
+    $("#char-title").text(marvelCharacter);
 
   });
 
